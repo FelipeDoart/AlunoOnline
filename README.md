@@ -113,9 +113,9 @@ Abaixo estão exemplos de requisições realizadas utilizando o Insomnia:
 ## 🗃️ Visualização do Banco (DBeaver)
 
 ### 📌 Tabela Aluno
-![](Imagens/Lightshot/dbeaveraluno.png)
+![](imagens/dbeaveraluno.png)
 
 ### 📌 Tabela Professor
-![](Imagens/Lightshot/dbeaverprof.png)
+![](imagens/dbeaverprof.png)
 
 ---
