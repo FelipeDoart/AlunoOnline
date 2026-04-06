@@ -97,16 +97,34 @@ src/
 Abaixo estão exemplos de requisições realizadas utilizando o Insomnia:
 
 ### 📌 Criar Aluno
-(INSERIR PRINT AQUI)
+![](imagens/Screenshot_2.png)
 
 ### 📌 Listar Alunos
-(INSERIR PRINT AQUI)
+![](imagens/Screenshot_3.png)
+
+### 📌 Listar por id Aluno
+![](imagens/Screenshot_4.png)
+
+### 📌 Deletar Aluno
+![](imagens/Screenshot_5.png)
+
+### 📌 Update Aluno
+![](imagens/Screenshot_6.png)
 
 ### 📌 Criar Professor
-(INSERIR PRINT AQUI)
+![](imagens/Screenshot_7.png)
 
 ### 📌 Listar Professores
-(INSERIR PRINT AQUI)
+![](imagens/Screenshot_8.png)
+
+### 📌 Listar por id Professor
+![](imagens/Screenshot_9.png)
+
+### 📌 Deletar Professor
+![](imagens/Screenshot_10.png)
+
+### 📌 Update Professor
+![](imagens/Screenshot_11.png)
 
 ---
 
