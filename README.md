@@ -28,7 +28,7 @@ A aplicação segue o padrão CRUD (Create, Read, Update, Delete), sendo possív
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Linguagem: JavaScript
+- Linguagem: Java
 - Framework: Spring Boot, Lombok
 - Banco de Dados:  PostgreSQL
 - Ferramentas:
