@@ -28,12 +28,12 @@ A aplicação segue o padrão CRUD (Create, Read, Update, Delete), sendo possív
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Linguagem: (ex: Java / JavaScript / Python)
+- Linguagem: JavaScript
 - Framework: Spring Boot, Lombok
 - Banco de Dados:  PostgreSQL
 - Ferramentas:
-  - Insomnia (testes de API)
-  - DBeaver (visualização do banco)
+  - Insomnia
+  - DBeaver
 
 ---
 
