@@ -29,8 +29,8 @@ A aplicação segue o padrão CRUD (Create, Read, Update, Delete), sendo possív
 ## 🛠️ Tecnologias Utilizadas
 
 - Linguagem: (ex: Java / JavaScript / Python)
-- Framework: (ex: Spring Boot / Express / Django)
-- Banco de Dados: (ex: MySQL / PostgreSQL)
+- Framework: Spring Boot, Lombok
+- Banco de Dados:  PostgreSQL
 - Ferramentas:
   - Insomnia (testes de API)
   - DBeaver (visualização do banco)
