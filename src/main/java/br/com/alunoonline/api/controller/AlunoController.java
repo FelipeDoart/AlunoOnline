@@ -18,28 +18,28 @@ public class AlunoController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED) //201 - Created
-    public void criarAluno(@RequestBody Aluno aluno) {
-        alunoService.criaraluno(aluno);
+    public void createAluno(@RequestBody Aluno aluno) {
+        alunoService.createAluno(aluno);
     }
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<Aluno> listarallaluno (){
-        return alunoService.listarallaluno();
+    public List<Aluno> listAllAluno (){
+        return alunoService.listAllAluno();
     }
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK) // 200 - OK
-    public Optional<Aluno> listarporid(@PathVariable Long id){
-        return alunoService.listarporid(id);
+    public Optional<Aluno> findByAlunoId(@PathVariable Long id){
+        return alunoService.findByAlunoId(id);
     }
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT) // 204 - NO CONTENT
-    public void deletaralunoporid(@PathVariable Long id){
-        alunoService.deletaralunoporid(id);
+    public void deleteAlunoByID(@PathVariable Long id){
+        alunoService.deleteAlunoByID(id);
     }
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updatealunoporid(@PathVariable Long id, @RequestBody Aluno alunoEdit){
-        alunoService.updatealunoporid(id, alunoEdit);
+        alunoService.updateAluno(id, alunoEdit);
     }
 }

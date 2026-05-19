@@ -17,22 +17,22 @@ public class AlunoService {
     @Autowired
     AlunoRepository alunoRepository;
 
-    public void criaraluno(Aluno aluno){
+    public void createAluno(Aluno aluno){
         alunoRepository.save(aluno);
     }
 
-    public List<Aluno> listarallaluno(){
+    public List<Aluno> listAllAluno(){
         return alunoRepository.findAll();
     }
 
-    public Optional<Aluno> listarporid (Long id){
+    public Optional<Aluno> findByAlunoId (Long id){
         return alunoRepository.findById(id);
     }
 
-    public void deletaralunoporid(Long id){
+    public void deleteAlunoByID(Long id){
         alunoRepository.deleteById(id);
     }
-    public void updatealunoporid (Long id, Aluno alunoedit){
+    public void updateAluno (Long id, Aluno alunoedit){
         alunoedit.setId(id);
         alunoRepository.save(alunoedit);
     }
