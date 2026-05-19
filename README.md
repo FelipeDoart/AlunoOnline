@@ -1,139 +1,252 @@
-# 📚 Projeto Aluno Online
+# 🎓 Aluno Online API
 
-## 📌 Descrição do Projeto
+API REST desenvolvida com Spring Boot para gerenciamento acadêmico de alunos, professores, disciplinas e matrículas.
 
-O projeto **Aluno Online** consiste em uma aplicação desenvolvida com o objetivo de gerenciar informações acadêmicas, permitindo o cadastro, consulta, atualização e remoção de dados de **alunos** e **professores**.
-
-A aplicação segue o padrão CRUD (Create, Read, Update, Delete), sendo possível realizar operações completas tanto para alunos quanto para professores.
+O sistema permite realizar operações completas de gerenciamento escolar, incluindo controle de matrículas, atualização de notas, emissão de histórico acadêmico e gerenciamento de status do aluno.
 
 ---
 
-## 🚀 Funcionalidades
+# 🚀 Funcionalidades
 
-### 👨‍🎓 Aluno
-- Criar um novo aluno
-- Listar todos os alunos
-- Buscar aluno por ID
-- Atualizar dados do aluno
-- Deletar aluno
-
-### 👨‍🏫 Professor
-- Criar um novo professor
-- Listar todos os professores
-- Buscar professor por ID
-- Atualizar dados do professor
-- Deletar professor
+## 👨‍🎓 Alunos
+- Cadastro de alunos
+- Listagem de alunos
+- Busca por ID
+- Atualização de dados
+- Remoção de alunos
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-
-- Linguagem: Java
-- Framework: Spring Boot, Lombok
-- Banco de Dados:  PostgreSQL
-- Ferramentas:
-  - Insomnia
-  - DBeaver
+## 👨‍🏫 Professores
+- Cadastro de professores
+- Listagem de professores
+- Busca por ID
+- Atualização de dados
+- Remoção de professores
 
 ---
 
-## 🏗️ Arquitetura do Projeto
-
-O projeto segue uma arquitetura em camadas:
-
-### 📂 Camadas:
-
-- **Controller**
-  - Responsável por receber as requisições HTTP e retornar as respostas
-
-- **Service**
-  - Contém a lógica de negócio da aplicação
-
-- **Repository**
-  - Responsável pela comunicação com o banco de dados
-
-- **Model**
-  - Representa as entidades do sistema (Aluno e Professor)
+## 📘 Disciplinas
+- Cadastro de disciplinas
+- Listagem de disciplinas
+- Busca por ID
+- Atualização de disciplinas
+- Remoção de disciplinas
 
 ---
 
-## 🧩 Estrutura do Projeto
-
-Exemplo:
-src/
-- ├── controller/
-- ├── service/
-- ├── repository/
-- ├── model/
-- └── config/
-
-
-## 🔗 Endpoints da API
-
-### Aluno
-
-| Método | Endpoint        | Descrição              |
-|--------|----------------|----------------------|
-| GET    | /alunos        | Lista todos alunos   |
-| GET    | /alunos/{id}   | Busca por ID         |
-| POST   | /alunos        | Cria novo aluno      |
-| PUT    | /alunos/{id}   | Atualiza aluno       |
-| DELETE | /alunos/{id}   | Remove aluno         |
-
-### Professor
-
-| Método | Endpoint             | Descrição              |
-|--------|---------------------|------------------------|
-| GET    | /professores        | Lista todos            |
-| GET    | /professores/{id}   | Busca por ID           |
-| POST   | /professores        | Cria novo              |
-| PUT    | /professores/{id}   | Atualiza               |
-| DELETE | /professores/{id}   | Remove                 |
+## 📝 Matrículas
+- Realizar matrícula de alunos
+- Trancar matrícula
+- Atualizar notas
+- Aprovação/Reprovação automática
+- Emissão de histórico escolar
 
 ---
 
-## 🧪 Testes com Insomnia
+# 🧠 Regras de Negócio
 
-Abaixo estão exemplos de requisições realizadas utilizando o Insomnia:
+O sistema possui regras acadêmicas automatizadas:
 
-### 📌 Criar Aluno
-![](imagens/Screenshot_2.png)
+- Caso a média do aluno seja maior ou igual à média mínima:
+  - Status → `APROVADO`
 
-### 📌 Listar Alunos
-![](imagens/Screenshot_3.png)
+- Caso a média seja inferior:
+  - Status → `REPROVADO`
 
-### 📌 Listar por id Aluno
-![](imagens/Screenshot_4.png)
-
-### 📌 Deletar Aluno
-![](imagens/Screenshot_5.png)
-
-### 📌 Update Aluno
-![](imagens/Screenshot_6.png)
-
-### 📌 Criar Professor
-![](imagens/Screenshot_7.png)
-
-### 📌 Listar Professores
-![](imagens/Screenshot_8.png)
-
-### 📌 Listar por id Professor
-![](imagens/Screenshot_9.png)
-
-### 📌 Deletar Professor
-![](imagens/Screenshot_10.png)
-
-### 📌 Update Professor
-![](imagens/Screenshot_11.png)
+- Matrículas também podem possuir os status:
+  - `MATRICULADO`
+  - `TRANCADO`
+  - `DESLIGADO`
 
 ---
 
-## 🗃️ Visualização do Banco (DBeaver)
+# 🛠️ Tecnologias Utilizadas
 
-### 📌 Tabela Aluno
-![](imagens/dbeaveraluno.png)
+## Backend
+- Java
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- Hibernate
+- Lombok
 
-### 📌 Tabela Professor
-![](imagens/dbeaverprof.png)
+## Banco de Dados
+- PostgreSQL
+
+## Ferramentas
+- Insomnia
+- DBeaver
+- IntelliJ IDEA
 
 ---
+
+# 🏗️ Arquitetura do Projeto
+
+O projeto segue arquitetura em camadas:
+
+```bash
+src/main/java
+│
+├── controller
+├── service
+├── repository
+├── model
+├── dtos
+├── enums
+└── config
+```
+
+## 📌 Camadas
+
+### Controller
+Responsável pelos endpoints da API.
+
+### Service
+Contém as regras de negócio.
+
+### Repository
+Comunicação com banco de dados utilizando JPA.
+
+### Model
+Entidades do sistema.
+
+### DTOs
+Objetos de transferência de dados.
+
+---
+
+# 🔗 Endpoints da API
+
+# 👨‍🎓 Alunos
+
+| Método | Endpoint |
+|--------|----------|
+| GET | /alunos |
+| GET | /alunos/{id} |
+| POST | /alunos |
+| PUT | /alunos/{id} |
+| DELETE | /alunos/{id} |
+
+---
+
+# 👨‍🏫 Professores
+
+| Método | Endpoint |
+|--------|----------|
+| GET | /professores |
+| GET | /professores/{id} |
+| POST | /professores |
+| PUT | /professores/{id} |
+| DELETE | /professores/{id} |
+
+---
+
+# 📘 Disciplinas
+
+| Método | Endpoint |
+|--------|----------|
+| GET | /disciplinas |
+| GET | /disciplinas/{id} |
+| POST | /disciplinas |
+| PUT | /disciplinas/{id} |
+| DELETE | /disciplinas/{id} |
+
+---
+
+# 📝 Matrículas
+
+| Método | Endpoint |
+|--------|----------|
+| POST | /matriculas |
+| PATCH | /matriculas/trancar/{id} |
+| PATCH | /matriculas/atualizar-notas/{id} |
+| GET | /matriculas/emitir-historico/{alunoId} |
+
+---
+
+# 📌 Exemplo de Atualização de Notas
+
+## Request
+
+```json
+{
+  "nota1": 8.0,
+  "nota2": 7.5
+}
+```
+
+## Endpoint
+
+```http
+PATCH /matriculas/atualizar-notas/1
+```
+
+---
+
+# 📄 Exemplo de Histórico Escolar
+
+O endpoint de histórico retorna:
+- Disciplinas cursadas
+- Notas
+- Status das matrículas
+- Média final
+
+---
+
+# 🗃️ Banco de Dados
+
+O sistema utiliza PostgreSQL com mapeamento ORM através do Hibernate/JPA.
+
+---
+
+# ▶️ Como Executar o Projeto
+
+## Clonar repositório
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+---
+
+## Configurar banco PostgreSQL
+
+Criar database:
+
+```sql
+CREATE DATABASE aluno_online;
+```
+
+---
+
+## Configurar application.properties
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/aluno_online
+spring.datasource.username=postgres
+spring.datasource.password=sua_senha
+```
+
+---
+
+## Executar aplicação
+
+```bash
+./mvnw spring-boot:run
+```
+
+ou executar diretamente pela IDE.
+
+---
+
+# 🧪 Testes da API
+
+Os testes foram realizados utilizando:
+- Insomnia
+- DBeaver
+
+
+# 👨‍💻 Autor
+
+Desenvolvido por Felipe Duarte.
