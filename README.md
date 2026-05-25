@@ -14,7 +14,6 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Busca por ID
 - Atualização de dados
 - Remoção de alunos
-
 ![](/imagens/Screenshot_5.png)
 
 ---
@@ -25,6 +24,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Busca por ID
 - Atualização de dados
 - Remoção de professores
+![](/imagens/Screenshot_6.png)
 
 ---
 
@@ -34,6 +34,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Busca por ID
 - Atualização de disciplinas
 - Remoção de disciplinas
+![](/imagens/Screenshot_7.png)
 
 ---
 
@@ -43,6 +44,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Atualizar notas
 - Aprovação/Reprovação automática
 - Emissão de histórico escolar
+- ![](/imagens/Screenshot_8.png)
 
 ---
 
