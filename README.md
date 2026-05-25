@@ -1,4 +1,4 @@
-# 🎓 Aluno Online API
+# ALUNO ONLINE API
 
 API REST desenvolvida com Spring Boot para gerenciamento acadêmico de alunos, professores, disciplinas e matrículas.
 
@@ -6,7 +6,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 
 ---
 
-# 🚀 Funcionalidades
+# Funcionalidades
 
 ## 👨‍🎓 Alunos
 - Cadastro de alunos
@@ -44,7 +44,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 
 ---
 
-# 🧠 Regras de Negócio
+# Regras de Negócio
 
 O sistema possui regras acadêmicas automatizadas:
 
@@ -81,7 +81,7 @@ O sistema possui regras acadêmicas automatizadas:
 
 ---
 
-# 🏗️ Arquitetura do Projeto
+# Arquitetura do Projeto
 
 O projeto segue arquitetura em camadas:
 
@@ -97,7 +97,7 @@ src/main/java
 └── config
 ```
 
-## 📌 Camadas
+## Camadas
 
 ### Controller
 Responsável pelos endpoints da API.
@@ -116,7 +116,7 @@ Objetos de transferência de dados.
 
 ---
 
-# 🔗 Endpoints da API
+# Endpoints da API
 
 # 👨‍🎓 Alunos
 
@@ -165,26 +165,8 @@ Objetos de transferência de dados.
 
 ---
 
-# 📌 Exemplo de Atualização de Notas
 
-## Request
-
-```json
-{
-  "nota1": 8.0,
-  "nota2": 7.5
-}
-```
-
-## Endpoint
-
-```http
-PATCH /matriculas/atualizar-notas/1
-```
-
----
-
-# 📄 Exemplo de Histórico Escolar
+# Exemplo de Histórico Escolar
 
 O endpoint de histórico retorna:
 - Disciplinas cursadas
@@ -194,59 +176,7 @@ O endpoint de histórico retorna:
 
 ---
 
-# 🗃️ Banco de Dados
+# Imagens
+### Dbeaver
 
-O sistema utiliza PostgreSQL com mapeamento ORM através do Hibernate/JPA.
-
----
-
-# ▶️ Como Executar o Projeto
-
-## Clonar repositório
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
-
----
-
-## Configurar banco PostgreSQL
-
-Criar database:
-
-```sql
-CREATE DATABASE aluno_online;
-```
-
----
-
-## Configurar application.properties
-
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/aluno_online
-spring.datasource.username=postgres
-spring.datasource.password=sua_senha
-```
-
----
-
-## Executar aplicação
-
-```bash
-./mvnw spring-boot:run
-```
-
-ou executar diretamente pela IDE.
-
----
-
-# 🧪 Testes da API
-
-Os testes foram realizados utilizando:
-- Insomnia
-- DBeaver
-
-
-# 👨‍💻 Autor
-
-Desenvolvido por Felipe Duarte.
+- Aluno
