@@ -14,6 +14,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Busca por ID
 - Atualização de dados
 - Remoção de alunos
+
 ![](/imagens/Screenshot_5.png)
 
 ---
@@ -24,6 +25,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Busca por ID
 - Atualização de dados
 - Remoção de professores
+
 ![](/imagens/Screenshot_6.png)
 
 ---
@@ -44,7 +46,8 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Atualizar notas
 - Aprovação/Reprovação automática
 - Emissão de histórico escolar
-- ![](/imagens/Screenshot_8.png)
+
+![](/imagens/Screenshot_8.png)
 
 ---
 
@@ -181,6 +184,54 @@ O endpoint de histórico retorna:
 ---
 
 # Imagens
-### Dbeaver
+### Insomnia
 
 - Aluno
+![](/imagens/Aluno9.png)
+
+![](/imagens/Srceenshot_10.png)
+
+![](/imagens/Screenshot_11.png)
+
+![](/imagens/Screenshot_12.png)
+
+![](/imagens/Screenshot_13.png)
+
+---
+- Professor
+
+![](/imagens/Professor15.png)
+
+![](/imagens/Screenshot_16.png)
+
+![](/imagens/Screenshot_17.png)
+
+![](/imagens/Screenshot_18.png)
+
+![](/imagens/Screenshot_19.png)
+
+---
+- Disciplina
+
+![](/imagens/Disciplina20.png)
+
+![](/imagens/Screenshot_21.png)
+
+![](/imagens/Screenshot_22.png)
+
+![](/imagens/Screenshot_23.png)
+
+![](/imagens/Screenshot_24.png)
+
+---
+- Matricula_Aluno
+
+![](/imagens/MatriculaAluno25.png)
+
+![](/imagens/Screenshot_26.png)
+
+![](/imagens/Screenshot_27.png)
+
+![](/imagens/Screenshot_28.png)
+
+---
