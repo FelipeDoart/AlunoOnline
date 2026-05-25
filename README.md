@@ -36,6 +36,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Busca por ID
 - Atualização de disciplinas
 - Remoção de disciplinas
+
 ![](/imagens/Screenshot_7.png)
 
 ---
@@ -186,7 +187,7 @@ O endpoint de histórico retorna:
 # Imagens
 ### Insomnia
 
-- Aluno
+# Aluno
 ![](/imagens/Aluno9.png)
 
 ![](/imagens/Srceenshot_10.png)
@@ -198,7 +199,7 @@ O endpoint de histórico retorna:
 ![](/imagens/Screenshot_13.png)
 
 ---
-- Professor
+# Professor
 
 ![](/imagens/Professor15.png)
 
@@ -211,7 +212,7 @@ O endpoint de histórico retorna:
 ![](/imagens/Screenshot_19.png)
 
 ---
-- Disciplina
+# Disciplina
 
 ![](/imagens/Disciplina20.png)
 
@@ -224,7 +225,7 @@ O endpoint de histórico retorna:
 ![](/imagens/Screenshot_24.png)
 
 ---
-- Matricula_Aluno
+# Matricula_Aluno
 
 ![](/imagens/MatriculaAluno25.png)
 
