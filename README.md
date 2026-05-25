@@ -6,7 +6,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 
 ---
 
-# Funcionalidades
+# Funcionalidades e Imagens
 
 ## 👨‍🎓 Alunos
 - Cadastro de alunos
@@ -14,6 +14,8 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Busca por ID
 - Atualização de dados
 - Remoção de alunos
+
+![](imagens/Screenshot_5.png)
 
 ---
 
