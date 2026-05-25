@@ -15,7 +15,7 @@ O sistema permite realizar operações completas de gerenciamento escolar, inclu
 - Atualização de dados
 - Remoção de alunos
 
-![](imagens/Screenshot_5.png)
+![](/imagens/Screenshot_5.png)
 
 ---
 
