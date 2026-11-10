@@ -1,6 +1,8 @@
-package br.com.alunoonline.api.model;
+package br.com.alunoonline.api.domain.matriculaAluno;
 
 import br.com.alunoonline.api.MatriculaAlunoStatusEnum;
+import br.com.alunoonline.api.domain.aluno.Aluno;
+import br.com.alunoonline.api.domain.disciplina.Disciplina;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

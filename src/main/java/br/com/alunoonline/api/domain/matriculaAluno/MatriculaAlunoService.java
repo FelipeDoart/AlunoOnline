@@ -1,12 +1,10 @@
-package br.com.alunoonline.api.service;
+package br.com.alunoonline.api.domain.matriculaAluno;
 
 import br.com.alunoonline.api.MatriculaAlunoStatusEnum;
 import br.com.alunoonline.api.dtos.AtualizarNotasRequestDTO;
 import br.com.alunoonline.api.dtos.DisciplinasAlunoResponseDTO;
 import br.com.alunoonline.api.dtos.HistoricoAlunoResponseDTO;
-import br.com.alunoonline.api.model.Aluno;
-import br.com.alunoonline.api.model.MatriculaAluno;
-import br.com.alunoonline.api.repository.MatriculaAlunoRepository;
+import br.com.alunoonline.api.domain.aluno.Aluno;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

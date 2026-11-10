@@ -1,8 +1,8 @@
 package br.com.alunoonline.api.controller;
 
 
-import br.com.alunoonline.api.model.Professor;
-import br.com.alunoonline.api.service.ProfessorService;
+import br.com.alunoonline.api.domain.professor.Professor;
+import br.com.alunoonline.api.domain.professor.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,5 @@
-package br.com.alunoonline.api.service;
+package br.com.alunoonline.api.domain.disciplina;
 
-import br.com.alunoonline.api.model.Disciplina;
-import br.com.alunoonline.api.repository.DisciplinaRepository;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
