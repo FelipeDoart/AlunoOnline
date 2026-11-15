@@ -2,6 +2,8 @@ package br.com.alunoonline.api.controller;
 
 import br.com.alunoonline.api.domain.usuario.Usuario;
 import br.com.alunoonline.api.dtos.DadosAutenticacaoDTO;
+import br.com.alunoonline.api.infra.security.DadosTokenJWT;
+import br.com.alunoonline.api.infra.security.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import jakarta.validation.Valid;
@@ -17,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class AutenticationController {
     @Autowired
     private AuthenticationManager manager;
+    @Autowired
+    private TokenService tokenService;
 
     @PostMapping
     public ResponseEntity efetuarLoging(@RequestBody @Valid DadosAutenticacaoDTO dados){
