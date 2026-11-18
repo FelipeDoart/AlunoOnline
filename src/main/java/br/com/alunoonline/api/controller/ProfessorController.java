@@ -24,17 +24,18 @@ public class ProfessorController {
     @Autowired
     private ProfessorRepository repository;
 
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED) //201 - Created
     public void criarprofessor(@RequestBody Professor professor) {
         professorService.criarprofessor(professor);
     }
 
-    @GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public List<Professor> listarallaluno (){
-        return professorService.listarallprof();
-    }
+//    @GetMapping
+//    @ResponseStatus(HttpStatus.OK)
+//    public List<Professor> listarallaluno (){
+//        return professorService.listarallprof();
+//    }
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK) // 200 - OK

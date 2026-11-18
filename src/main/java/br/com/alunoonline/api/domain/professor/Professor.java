@@ -2,15 +2,14 @@ package br.com.alunoonline.api.domain.professor;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
+@EqualsAndHashCode(of = "id")
 @Table(name = "professor")
-@Data
+@Entity(name = "Professor")
+@Getter
 public class Professor{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,4 +20,6 @@ public class Professor{
     private String email;
 
     private String cpf;
+    private Boolean ativo = true;
+
 }
